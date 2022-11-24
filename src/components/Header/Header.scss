@@ -1,5 +1,7 @@
+@import "../../colors.scss";
+
 .header {
-  background-color: rgb(66, 49, 49);
+  background-color: $color1;
   color: whitesmoke;
   font-size: 18px;
   font-weight: 200;
@@ -9,7 +11,7 @@
   padding: 20px;
 }
 
-.logo{
+.logo {
   height: 40px;
   margin-left: 10px;
 }

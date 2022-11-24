@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .home {
   display: flex;
   justify-content: center;
@@ -10,7 +12,7 @@
 }
 
 .image-logo {
-  background-image: url(../../../public/);
+  /* background-image: url(../../../public/); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -18,7 +20,7 @@
 }
 
 .image-banner {
-  background-image: url(../../../public/);
+  /* background-image: url(../../../public/); */
   background-repeat: no-repeat;
   background-position: bottom;
   height: 300px;

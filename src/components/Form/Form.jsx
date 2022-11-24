@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Form.css";
+import "./Form.scss";
 import { useNavigate } from "react-router-dom";
 
 const Form = () => {
@@ -44,7 +44,7 @@ const Form = () => {
     localStorage.setItem("user", JSON.stringify(data));
     clearState();
     setTimeout(() => {
-      navigate("/");
+      navigate("/listNews");
     }, 1000);
     setVisible(false);
   };
@@ -53,8 +53,8 @@ const Form = () => {
     <>
       <div className="form">
         <div className="wrapForm">
-          <h1>Reserva</h1>
-          <p>Confirma tu reserva a través del formulario</p>
+          <h1>Form News</h1>
+          <p>Create your news in this form</p>
           <form onSubmit={handleSubmit}>
                         
             <input
@@ -72,7 +72,7 @@ const Form = () => {
               value={data.email}
             />
             <button type="submit" disabled={btnDisabled}>
-              Enviar
+              Submit
             </button>
           </form>
           <p>{visible ? message : "Redireccionandote al Home..."}</p>

@@ -1,3 +1,5 @@
+@import "../../colors.scss";
+
 .form {
   display: flex;
   justify-content: center;
@@ -30,4 +32,3 @@ button[type="submit"] {
 button:hover {
   background-color: red;
 }
-

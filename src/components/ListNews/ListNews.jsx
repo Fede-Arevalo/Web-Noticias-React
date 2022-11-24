@@ -1,5 +1,5 @@
 import React from "react";
-import "./ListNews.css";
+import "./ListNews.scss";
 
 const ListNews = () => {
   return (
