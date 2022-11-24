@@ -1,0 +1,31 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: auto;
+}
+
+.wrap {
+  width: 60%;
+}
+
+.image-logo {
+  background-image: url(../../../public/);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+}
+
+.image-banner {
+  background-image: url(../../../public/);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.text {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}

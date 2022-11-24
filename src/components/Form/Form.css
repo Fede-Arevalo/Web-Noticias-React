@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
+.wrapForm {
+  width: 70%;
+}
+
+input {
+  margin: 10px 0 0 0;
+  width: 98%;
+  min-height: 2em;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 99%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-bottom: 40px;
+}
+
+button:hover {
+  background-color: red;
+}
+
