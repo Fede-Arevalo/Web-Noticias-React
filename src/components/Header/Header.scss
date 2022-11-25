@@ -4,7 +4,7 @@
   background-color: $color1;
   color: whitesmoke;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,14 +16,15 @@
   margin-left: 10px;
 }
 
-nav > a {
-  all: unset;
-  cursor: pointer;
-  color: whitesmoke;
-  padding: 15px;
-  font-size: 18px;
-}
-
-nav > a:hover {
-  color: rgb(172, 124, 10);
+nav {
+  a {
+    all: unset;
+    cursor: pointer;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 18px;
+    &:hover {
+      color: $color4;
+    }
+  }
 }

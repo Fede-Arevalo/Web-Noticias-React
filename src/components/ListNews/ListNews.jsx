@@ -5,13 +5,14 @@ import "./ListNews.scss";
 const ListNews = () => {
   const { news } = useContext(GlobalContext);
 
-  const newsItem = news.map((newsItem) => {
+  const newsItem = news.map((newsItem, i) => {
     return (
-      <div>
+      <div key={i}>
         <p>{newsItem.section}</p>
         <h1>{newsItem.title}</h1>
         <p>{newsItem.abstract}</p>
-        <img src={newsItem.multimedia} alt="img" />
+        {/* {newsItem.multimedia.map(img => <img src ={img.url} alt="img" />)}  */}
+        <img src={newsItem.multimedia[1].url} alt="img" />
         <p>
           {newsItem.byline} | {newsItem.published_date}
         </p>
