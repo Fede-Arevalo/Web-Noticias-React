@@ -5,7 +5,8 @@ import "./ListNews.scss";
 const ListNews = () => {
   const { news } = useContext(GlobalContext);
 
-  const newsItem = news.map((newsItem, i) => {
+  const newsSports = news.filter((newItem) => newItem.section == "sports");
+  const newsItem = newsSports.map((newsItem, i) => {
     return (
       <div key={i}>
         <p>{newsItem.section}</p>
