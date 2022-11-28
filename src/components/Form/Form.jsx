@@ -3,18 +3,28 @@ import "./Form.scss";
 import { useNavigate } from "react-router-dom";
 
 const Form = () => {
+  let date = new Date();
+  let day = date.getDate();
+  let month = date.getMonth()+1;
+  let year = date.getFullYear();
   let navigate = useNavigate();
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [message, setMessage] = useState("");
   const [visible, setVisible] = useState(true);
   const [data, setData] = useState({
-    name: "",
-    email: "",
+    section: "sport",
+    title: "",
+    abstract: "",
+    byline: "",
+    published_date: `${year}-${month}-${day}`
   });
 
   const initialState = {
-    name: "",
-    email: "",
+    section: "",
+    title: "",
+    abstract: "",
+    byline: "",
+    published_date: "",
   };
 
   const clearState = () => {
@@ -22,8 +32,8 @@ const Form = () => {
   };
 
   useEffect(() => {
-    if (data.name.length < 3) {
-      setMessage("Tu nombre debe tener al menos 3 caracteres");
+    if (data.section.length < 3) {
+      setMessage("Your section must have at least 3 characters");
       setBtnDisabled(true);
     } else {
       setMessage(null);
@@ -40,8 +50,7 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("sending data..." + data.name + " " + data.email);
-    localStorage.setItem("user", JSON.stringify(data));
+    localStorage.setItem("author", JSON.stringify(data));
     clearState();
     setTimeout(() => {
       navigate("/listNews");
@@ -56,27 +65,39 @@ const Form = () => {
           <h1>Form News</h1>
           <p>Create your news in this form</p>
           <form onSubmit={handleSubmit}>
-                        
             <input
               type="text"
-              placeholder="nombre"
+              placeholder="section"
               onChange={handleInputChange}
-              name="name"
-              value={data.name}
+              name="section"
+              value={data.section}
             />
             <input
-              type="email"
-              placeholder="email"
+              type="text"
+              placeholder="title"
               onChange={handleInputChange}
-              name="email"
-              value={data.email}
+              name="title"
+              value={data.title}
+            />
+            <input
+              type="text"
+              placeholder="abstract"
+              onChange={handleInputChange}
+              name="abstract"
+              value={data.abstract}
+            />
+            <input
+              type="text"
+              placeholder="author"
+              onChange={handleInputChange}
+              name="byline"
+              value={data.byline}
             />
             <button type="submit" disabled={btnDisabled}>
               Submit
             </button>
           </form>
-          <p>{visible ? message : "Redireccionandote al Home..."}</p>
-          
+          <p>{visible ? message : "Redirecting to Home..."}</p>
         </div>
       </div>
     </>

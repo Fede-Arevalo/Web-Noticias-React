@@ -1,19 +1,20 @@
 import React, { useContext, useEffect } from "react";
 import { GlobalContext } from "../../context/GlobalState";
-import ListNews from "../ListNews/ListNews";
+import News from "../News/News";
 import "./Home.scss";
 
 const Home = () => {
   const { getNews } = useContext(GlobalContext);
   useEffect(() => {
     getNews();
-  }, [getNews]);
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div className="home">
       <div className="image-banner"></div>
       <div className="wrap">
-        <ListNews />
+        <News />
       </div>
     </div>
   );

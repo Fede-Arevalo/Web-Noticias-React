@@ -4,7 +4,7 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <span>Developers News</span>
+      <span>TOP CAR NEWS ™ | ©Hearst Autos, Inc. All Rights Reserved.</span>
     </div>
   );
 };

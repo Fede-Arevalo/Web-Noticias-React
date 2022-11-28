@@ -1,19 +1,19 @@
 @import "../../colors.scss";
 
 .header {
+  width: 100%;
+  position: fixed;
   background-color: $color1;
-  color: whitesmoke;
-  font-size: 18px;
-  font-weight: 400;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.logo {
-  height: 40px;
-  margin-left: 10px;
+  .menu {
+    font-size: 18px;
+    font-weight: 400;
+    color: whitesmoke;
+    height: 70px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 nav {
@@ -27,4 +27,11 @@ nav {
       color: $color4;
     }
   }
+}
+
+span {
+  color: whitesmoke;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
