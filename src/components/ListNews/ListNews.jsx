@@ -13,8 +13,8 @@ const ListNews = () => {
   return (
     <div className="listNews">
       <div className="wrapListNews">
-      <h1>List News</h1>
-      <hr width="100%" />
+        <h1>List News</h1>
+        <p>Create your news in this form</p>
         <News />
       </div>
     </div>

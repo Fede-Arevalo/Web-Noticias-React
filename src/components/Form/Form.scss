@@ -3,12 +3,13 @@
 .form {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 80px;
   margin-bottom: auto;
 }
 
 .wrapForm {
   width: 50%;
+  
 }
 
 input {
@@ -23,12 +24,11 @@ button[type="submit"] {
   margin: 1em auto;
   height: 2em;
   font-size: 1.1rem;
-  background-color: black;
+  background-color: $color6;
   color: white;
   border: none;
   margin-bottom: 40px;
-}
-
-button:hover {
-  background-color: red;
+  &:hover {
+    background-color: $color1;
+  }
 }

@@ -13,25 +13,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-nav {
-  a {
-    all: unset;
-    cursor: pointer;
-    color: whitesmoke;
-    padding: 15px;
-    font-size: 18px;
-    &:hover {
-      color: $color4;
+    span {
+      color: whitesmoke;
+      font-size: 19px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    nav {
+      a {
+        all: unset;
+        cursor: pointer;
+        color: whitesmoke;
+        padding: 15px;
+        font-size: 18px;
+        &:hover {
+          color: $color4;
+        }
+      }
     }
   }
-}
-
-span {
-  color: whitesmoke;
-  font-size: 19px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
