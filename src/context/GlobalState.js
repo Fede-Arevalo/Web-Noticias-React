@@ -15,7 +15,6 @@ export const GlobalProvider = ({ children }) => {
     const res = await axios.get(
       "https://api.nytimes.com/svc/topstories/v2/automobiles.json?api-key=EACT9nnt9YmVAwWGj43nbhSBXGVOgEOP"
     );
-    console.log(res)
     dispatch({
       type: "GET_NEWS",
       payload: res.data.results,
