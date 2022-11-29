@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { GlobalContext } from "../../context/GlobalState";
-import News from "../News/News";
+import NewsHome from "../NewsHome/NewsHome";
 import "./Home.scss";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home">
       <div className="image-banner"></div>
       <div className="wrap">
-        <News />
+        <NewsHome />
       </div>
     </div>
   );

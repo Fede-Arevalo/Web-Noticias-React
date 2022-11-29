@@ -14,7 +14,7 @@ const ListNews = () => {
     <div className="listNews">
       <div className="wrapListNews">
         <h1>List News</h1>
-        <p>Create your news in this form</p>
+        <h3>- The latest motorsport news -</h3>
         <News />
       </div>
     </div>

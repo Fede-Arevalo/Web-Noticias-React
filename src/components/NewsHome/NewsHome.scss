@@ -1,0 +1,25 @@
+@import "../../colors.scss";
+
+.NewsHome {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+.wrapNewsHome {
+  width: 300px;
+ 
+  img {
+    width: 100%;
+
+  }
+
+  h1 {
+    font-size: 1rem;
+    background-color: $color4;
+    color: whitesmoke;
+    margin: 0;
+    padding: 10px 10px 15px 10px;
+  }
+}
